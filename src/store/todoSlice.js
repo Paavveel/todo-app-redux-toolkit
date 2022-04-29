@@ -41,18 +41,9 @@ const todoSlice = createSlice({
       currentTodo.status = action.payload.status;
       setLocalStorage(state.todos);
     },
-
-    toggleComplete(state, action) {
-      const currentTodo = state.todos.find(
-        todo => todo.id === action.payload.id
-      );
-      currentTodo.status = action.payload.status;
-      setLocalStorage(state.todos);
-    },
   },
 });
 
-export const { addTodo, deleteTodo, updateTodo, toggleComplete } =
-  todoSlice.actions;
+export const { addTodo, deleteTodo, updateTodo } = todoSlice.actions;
 
 export default todoSlice.reducer;
