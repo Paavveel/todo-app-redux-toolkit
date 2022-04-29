@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/todo-app-redux-toolkit/static/css/main.f038e77f.css",
-    "main.js": "/todo-app-redux-toolkit/static/js/main.c11ff1a7.js",
+    "main.js": "/todo-app-redux-toolkit/static/js/main.5414d07a.js",
     "static/media/poppins-all-400-normal.woff": "/todo-app-redux-toolkit/static/media/poppins-all-400-normal.6fbfdac99c274b77fe96.woff",
     "static/media/poppins-all-600-normal.woff": "/todo-app-redux-toolkit/static/media/poppins-all-600-normal.ef66d5cebf31c6a23603.woff",
     "static/media/poppins-all-500-normal.woff": "/todo-app-redux-toolkit/static/media/poppins-all-500-normal.4716bc1dd9f51751d3ef.woff",
@@ -20,10 +20,10 @@
     "static/media/poppins-latin-ext-700-normal.woff2": "/todo-app-redux-toolkit/static/media/poppins-latin-ext-700-normal.63d2a69665d58b22ceea.woff2",
     "index.html": "/todo-app-redux-toolkit/index.html",
     "main.f038e77f.css.map": "/todo-app-redux-toolkit/static/css/main.f038e77f.css.map",
-    "main.c11ff1a7.js.map": "/todo-app-redux-toolkit/static/js/main.c11ff1a7.js.map"
+    "main.5414d07a.js.map": "/todo-app-redux-toolkit/static/js/main.5414d07a.js.map"
   },
   "entrypoints": [
     "static/css/main.f038e77f.css",
-    "static/js/main.c11ff1a7.js"
+    "static/js/main.5414d07a.js"
   ]
 }
