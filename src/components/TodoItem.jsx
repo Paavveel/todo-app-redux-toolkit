@@ -6,6 +6,8 @@ import { useDispatch } from 'react-redux';
 import { deleteTodo, updateTodo } from '../store/todoSlice';
 import styles from '../styles/modules/todoItem.module.scss';
 import { getClasses, handleKeyDown } from '../utils/utils';
+
+// Components
 import CheckButton from './CheckButton';
 import TodoModal from './TodoModal';
 

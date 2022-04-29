@@ -81,7 +81,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
         id: nanoid(),
         title,
         status,
-        time: format(new Date(), 'HH:mm, dd/M/yy'),
+        time: format(new Date(), 'H:mm, dd/M/yy'),
       };
 
       dispatch(addTodo(newTodo));
@@ -102,6 +102,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
         toast.success('Task Updated Successfully');
       } else {
         toast.error('No Changes Made');
+        return;
       }
       setModalOpen(false);
     }

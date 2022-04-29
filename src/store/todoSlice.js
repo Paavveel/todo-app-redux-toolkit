@@ -16,6 +16,7 @@ const setLocalStorage = state => {
 };
 
 const initialValue = {
+  filterStatus: 'all',
   todos: getInitialTodo(),
 };
 
@@ -41,9 +42,13 @@ const todoSlice = createSlice({
       currentTodo.status = action.payload.status;
       setLocalStorage(state.todos);
     },
+    updateFilterStatus(state, action) {
+      state.filterStatus = action.payload;
+    },
   },
 });
 
-export const { addTodo, deleteTodo, updateTodo } = todoSlice.actions;
+export const { addTodo, deleteTodo, updateTodo, updateFilterStatus } =
+  todoSlice.actions;
 
 export default todoSlice.reducer;

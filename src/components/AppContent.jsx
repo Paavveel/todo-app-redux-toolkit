@@ -23,11 +23,18 @@ const child = {
 };
 
 function AppContent() {
-  const todoList = useSelector(state => state.todos.todos);
+  const { todos, filterStatus } = useSelector(state => state.todos);
 
-  const sortedTodolist = [...todoList];
-  sortedTodolist.sort((a, b) => b.time - a.time);
+  const sortedTodoList = [...todos].reverse();
 
+  const filteredTodoList = sortedTodoList.filter(todo => {
+    if (filterStatus === 'all') {
+      return true;
+    }
+    return todo.status === filterStatus;
+  });
+
+  console.log(todos[0].time);
   return (
     <motion.div
       className={styles.content__wrapper}
@@ -36,11 +43,11 @@ function AppContent() {
       animate='visible'
     >
       <AnimatePresence>
-        {sortedTodolist && sortedTodolist.length > 0 ? (
-          sortedTodolist.map(todo => <TodoItem key={todo.id} todo={todo} />)
+        {filteredTodoList && filteredTodoList.length > 0 ? (
+          filteredTodoList.map(todo => <TodoItem key={todo.id} todo={todo} />)
         ) : (
           <motion.p variants={child} className={styles.emptyText}>
-            No Todos
+            No Todo Found
           </motion.p>
         )}
       </AnimatePresence>
