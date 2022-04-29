@@ -34,7 +34,6 @@ function AppContent() {
     return todo.status === filterStatus;
   });
 
-  console.log(todos[0].time);
   return (
     <motion.div
       className={styles.content__wrapper}
